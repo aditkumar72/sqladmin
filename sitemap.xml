@@ -2,52 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://aminalaee.dev/sqladmin/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/authentication/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/changelog/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/configurations/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/faq/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/working_with_templates/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://aminalaee.dev/sqladmin/writing_custom_views/</loc>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/api_reference/application/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/api_reference/authentication/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/api_reference/base_view/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://aminalaee.dev/sqladmin/api_reference/model_view/</loc>
-         <lastmod>2022-11-22</lastmod>
+         <lastmod>2023-01-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

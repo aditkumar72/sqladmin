@@ -10,21 +10,21 @@
       
       
       
-        <link rel="canonical" href="https://aminalaee.dev/sqladmin/">
+        <link rel="canonical" href="https://aminalaee.dev/sqladmin/writing_custom_views/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
-        <title>SQLAlchemy Admin</title>
+        <title>Working with Custom Views - SQLAlchemy Admin</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
         
           
           
@@ -45,11 +45,11 @@
       
     
     
-      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-      <link rel="stylesheet" href="stylesheets/extra.css">
+      <link rel="stylesheet" href="../stylesheets/extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sqlalchemy-admin-for-starlettefastapi" class="md-skip">
+        <a href="#basic-example" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="SQLAlchemy Admin" class="md-header__button md-logo" aria-label="SQLAlchemy Admin" data-md-component="logo">
+    <a href=".." title="SQLAlchemy Admin" class="md-header__button md-logo" aria-label="SQLAlchemy Admin" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction
+              Working with Custom Views
             
           </span>
         </div>
@@ -198,7 +198,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="SQLAlchemy Admin" class="md-nav__button md-logo" aria-label="SQLAlchemy Admin" data-md-component="logo">
+    <a href=".." title="SQLAlchemy Admin" class="md-nav__button md-logo" aria-label="SQLAlchemy Admin" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -227,6 +227,66 @@
 
   
   
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../configurations/" class="md-nav__link">
+        Configurations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authentication/" class="md-nav__link">
+        Authentication
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working_with_templates/" class="md-nav__link">
+        Working with Templates
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
     
   
   
@@ -235,16 +295,14 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Introduction
+          Working with Custom Views
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="." class="md-nav__link md-nav__link--active">
-        Introduction
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Working with Custom Views
       </a>
       
         
@@ -252,8 +310,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -263,29 +319,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#basic-example" class="md-nav__link">
+    Basic example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
-    Screenshots
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quickstart" class="md-nav__link">
-    Quickstart
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-projects-and-inspirations" class="md-nav__link">
-    Related projects and inspirations
+  <a href="#database-access" class="md-nav__link">
+    Database access
   </a>
   
 </li>
@@ -306,67 +348,7 @@
   
   
     <li class="md-nav__item">
-      <a href="configurations/" class="md-nav__link">
-        Configurations
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="authentication/" class="md-nav__link">
-        Authentication
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="working_with_templates/" class="md-nav__link">
-        Working with Templates
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="writing_custom_views/" class="md-nav__link">
-        Working with Custom Views
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="faq/" class="md-nav__link">
+      <a href="../faq/" class="md-nav__link">
         Frequently Asked Questions
       </a>
     </li>
@@ -407,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api_reference/application/" class="md-nav__link">
+      <a href="../api_reference/application/" class="md-nav__link">
         Application
       </a>
     </li>
@@ -421,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api_reference/model_view/" class="md-nav__link">
+      <a href="../api_reference/model_view/" class="md-nav__link">
         ModelView
       </a>
     </li>
@@ -435,7 +417,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api_reference/base_view/" class="md-nav__link">
+      <a href="../api_reference/base_view/" class="md-nav__link">
         BaseView
       </a>
     </li>
@@ -449,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api_reference/authentication/" class="md-nav__link">
+      <a href="../api_reference/authentication/" class="md-nav__link">
         Authentication
       </a>
     </li>
@@ -471,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="changelog/" class="md-nav__link">
+      <a href="../changelog/" class="md-nav__link">
         Changelog
       </a>
     </li>
@@ -495,8 +477,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -505,29 +485,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installation" class="md-nav__link">
-    Installation
+  <a href="#basic-example" class="md-nav__link">
+    Basic example
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#screenshots" class="md-nav__link">
-    Screenshots
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quickstart" class="md-nav__link">
-    Quickstart
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#related-projects-and-inspirations" class="md-nav__link">
-    Related projects and inspirations
+  <a href="#database-access" class="md-nav__link">
+    Database access
   </a>
   
 </li>
@@ -547,112 +513,103 @@
                   
 
 
-<p align="center">
-<a href="https://github.com/aminalaee/sqladmin">
-    <img width="400px" src="https://raw.githubusercontent.com/aminalaee/sqladmin/main/docs/assets/images/banner.png" alt"SQLAdmin">
-</a>
-</p>
+  <h1>Working with Custom Views</h1>
 
-<p align="center">
-<a href="https://github.com/aminalaee/sqladmin/actions">
-    <img src="https://github.com/aminalaee/sqladmin/workflows/Test%20Suite/badge.svg" alt="Build Status">
-</a>
-<a href="https://github.com/aminalaee/sqladmin/actions">
-    <img src="https://github.com/aminalaee/sqladmin/workflows/Publish/badge.svg" alt="Publish Status">
-</a>
-<a href="https://codecov.io/gh/aminalaee/sqladmin">
-    <img src="https://codecov.io/gh/aminalaee/sqladmin/branch/main/graph/badge.svg" alt="Coverage">
-</a>
-<a href="https://pypi.org/project/sqladmin/">
-    <img src="https://badge.fury.io/py/sqladmin.svg" alt="Package version">
-</a>
-<a href="https://pypi.org/project/sqladmin" target="_blank">
-    <img src="https://img.shields.io/pypi/pyversions/sqladmin.svg?color=%2334D058" alt="Supported Python versions">
-</a>
-</p>
+<h3 id="basic-example">Basic example</h3>
+<p>You might need to add custom views to the existing SQLAdmin views, for example to create dashboards, show custom info or add new forms.</p>
+<p>To add custom views to the Admin interface, you can use the <code>BaseView</code> included in SQLAdmin. Here's an example to add custom views:</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqladmin</span> <span class="kn">import</span> <span class="n">BaseView</span><span class="p">,</span> <span class="n">expose</span>
 
-<hr />
-<h1 id="sqlalchemy-admin-for-starlettefastapi">SQLAlchemy Admin for Starlette/FastAPI</h1>
-<p>SQLAdmin is a flexible Admin interface for SQLAlchemy models.</p>
-<p>Main features include:</p>
-<ul>
-<li><a href="https://github.com/sqlalchemy/sqlalchemy">SQLAlchemy</a> sync/async engines</li>
-<li><a href="https://github.com/encode/starlette">Starlette</a> integration</li>
-<li><a href="https://github.com/tiangolo/fastapi">FastAPI</a> integration</li>
-<li><a href="https://github.com/tiangolo/sqlmodel">SQLModel</a> support</li>
-<li>Modern UI using <a href="https://github.com/tabler/tabler">Tabler</a></li>
-</ul>
-<hr />
-<p><strong>Documentation</strong>: <a href="https://aminalaee.dev/sqladmin">https://aminalaee.dev/sqladmin</a></p>
-<p><strong>Source Code</strong>: <a href="https://github.com/aminalaee/sqladmin">https://github.com/aminalaee/sqladmin</a></p>
-<p><strong>Online Demo</strong>: <a href="https://sqladmin-demo.aminalaee.dev/admin/">Demo</a></p>
-<hr />
-<h2 id="installation">Installation</h2>
-<div class="highlight"><pre><span></span><code>$ pip install sqladmin
+<span class="k">class</span> <span class="nc">ReportView</span><span class="p">(</span><span class="n">BaseView</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Report Page&quot;</span>
+    <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;fa-chart-line&quot;</span>
+
+    <span class="nd">@expose</span><span class="p">(</span><span class="s2">&quot;/report&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;GET&quot;</span><span class="p">])</span>
+    <span class="k">def</span> <span class="nf">report_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">templates</span><span class="o">.</span><span class="n">TemplateResponse</span><span class="p">(</span>
+            <span class="s2">&quot;report.html&quot;</span><span class="p">,</span>
+            <span class="n">context</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;request&quot;</span><span class="p">:</span> <span class="n">request</span><span class="p">},</span>
+        <span class="p">)</span>
+
+<span class="n">admin</span><span class="o">.</span><span class="n">add_view</span><span class="p">(</span><span class="n">ReportView</span><span class="p">)</span>
 </code></pre></div>
-<hr />
-<h2 id="screenshots">Screenshots</h2>
-<p><img width="1492" alt="sqladmin-1" src="https://user-images.githubusercontent.com/19784933/208232730-0114a155-2740-4e89-9d73-64a4e51a5cf5.png">
-<img width="1492" alt="sqladmin-2" src="https://user-images.githubusercontent.com/19784933/208232731-6d783dde-b93e-41c0-911b-3d1c3c73f1d5.png"></p>
-<h2 id="quickstart">Quickstart</h2>
-<p>Let's define an example SQLAlchemy model:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Column</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">create_engine</span>
-<span class="kn">from</span> <span class="nn">sqlalchemy.ext.declarative</span> <span class="kn">import</span> <span class="n">declarative_base</span>
+</div>
+<p>This will assume there's a <code>templates</code> directory in your project and you have created a <code>report.html</code> in that directory.</p>
+<p>If you want to use a custom directory name, you can change that with:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqladmin</span> <span class="kn">import</span> <span class="n">Admin</span>
 
+<span class="n">admin</span> <span class="o">=</span> <span class="n">Admin</span><span class="p">(</span><span class="n">templates_dir</span><span class="o">=</span><span class="s2">&quot;my_templates&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</code></pre></div>
+<p>Now visiting <code>/admin/report</code> you can render your <code>report.html</code> file.</p>
+<h3 id="database-access">Database access</h3>
+<p>The example above was very basic and you probably want to access database and SQLAlchemy models in your custom view. You can use <code>sessionmaker</code> the same way SQLAdmin is using it to do so:</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">Column</span><span class="p">,</span> <span class="n">Integer</span><span class="p">,</span> <span class="n">String</span><span class="p">,</span> <span class="n">select</span><span class="p">,</span> <span class="n">func</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.orm</span> <span class="kn">import</span> <span class="n">sessionmaker</span><span class="p">,</span> <span class="n">declarative_base</span>
+<span class="kn">from</span> <span class="nn">sqlalchemy.ext.asyncio</span> <span class="kn">import</span> <span class="n">AsyncSession</span><span class="p">,</span> <span class="n">create_async_engine</span>
+<span class="kn">from</span> <span class="nn">sqladmin</span> <span class="kn">import</span> <span class="n">Admin</span><span class="p">,</span> <span class="n">BaseView</span><span class="p">,</span> <span class="n">expose</span>
+<span class="kn">from</span> <span class="nn">starlette.applications</span> <span class="kn">import</span> <span class="n">Starlette</span>
 
 <span class="n">Base</span> <span class="o">=</span> <span class="n">declarative_base</span><span class="p">()</span>
-<span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span>
-    <span class="s2">&quot;sqlite:///example.db&quot;</span><span class="p">,</span>
-    <span class="n">connect_args</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;check_same_thread&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">},</span>
-<span class="p">)</span>
+<span class="n">engine</span> <span class="o">=</span> <span class="n">create_async_engine</span><span class="p">(</span><span class="s2">&quot;sqlite+aiosqlite:///test.db&quot;</span><span class="p">)</span>
+<span class="n">Session</span> <span class="o">=</span> <span class="n">sessionmaker</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span> <span class="n">class_</span><span class="o">=</span><span class="n">AsyncSession</span><span class="p">)</span>
+
+<span class="n">app</span> <span class="o">=</span> <span class="n">Starlette</span><span class="p">()</span>
+<span class="n">admin</span> <span class="o">=</span> <span class="n">Admin</span><span class="p">(</span><span class="n">app</span><span class="o">=</span><span class="n">app</span><span class="p">,</span> <span class="n">engine</span><span class="o">=</span><span class="n">engine</span><span class="p">)</span>
 
 
 <span class="k">class</span> <span class="nc">User</span><span class="p">(</span><span class="n">Base</span><span class="p">):</span>
     <span class="n">__tablename__</span> <span class="o">=</span> <span class="s2">&quot;users&quot;</span>
 
     <span class="nb">id</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">Integer</span><span class="p">,</span> <span class="n">primary_key</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">)</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">Column</span><span class="p">(</span><span class="n">String</span><span class="p">(</span><span class="n">length</span><span class="o">=</span><span class="mi">16</span><span class="p">))</span>
 
 
-<span class="n">Base</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">create_all</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>  <span class="c1"># Create tables</span>
+<span class="k">class</span> <span class="nc">ReportView</span><span class="p">(</span><span class="n">BaseView</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Report Page&quot;</span>
+    <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;fa-chart-line&quot;</span>
+
+    <span class="nd">@expose</span><span class="p">(</span><span class="s2">&quot;/report&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;GET&quot;</span><span class="p">])</span>
+    <span class="k">async</span> <span class="k">def</span> <span class="nf">report_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+        <span class="c1"># async with engine.begin() as conn:</span>
+        <span class="c1">#     await conn.run_sync(Base.metadata.create_all)</span>
+
+        <span class="k">async</span> <span class="k">with</span> <span class="n">Session</span><span class="p">(</span><span class="n">expire_on_commit</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="k">as</span> <span class="n">session</span><span class="p">:</span>
+            <span class="n">stmt</span> <span class="o">=</span> <span class="n">select</span><span class="p">(</span><span class="n">func</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">User</span><span class="o">.</span><span class="n">id</span><span class="p">))</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">session</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="n">stmt</span><span class="p">)</span>
+            <span class="n">users_count</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">scalar_one</span><span class="p">()</span>
+
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">templates</span><span class="o">.</span><span class="n">TemplateResponse</span><span class="p">(</span>
+            <span class="s2">&quot;report.html&quot;</span><span class="p">,</span>
+            <span class="n">context</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;request&quot;</span><span class="p">:</span> <span class="n">request</span><span class="p">,</span> <span class="s2">&quot;users_count&quot;</span><span class="p">:</span> <span class="n">users_count</span><span class="p">},</span>
+        <span class="p">)</span>
+
+
+<span class="n">admin</span><span class="o">.</span><span class="n">add_view</span><span class="p">(</span><span class="n">ReportView</span><span class="p">)</span>
 </code></pre></div>
-<p>If you want to use <code>SQLAdmin</code> with <code>FastAPI</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">fastapi</span> <span class="kn">import</span> <span class="n">FastAPI</span>
-<span class="kn">from</span> <span class="nn">sqladmin</span> <span class="kn">import</span> <span class="n">Admin</span><span class="p">,</span> <span class="n">ModelView</span>
-
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">FastAPI</span><span class="p">()</span>
-<span class="n">admin</span> <span class="o">=</span> <span class="n">Admin</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
-
-
-<span class="k">class</span> <span class="nc">UserAdmin</span><span class="p">(</span><span class="n">ModelView</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">User</span><span class="p">):</span>
-    <span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">User</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">User</span><span class="o">.</span><span class="n">name</span><span class="p">]</span>
-
-
-<span class="n">admin</span><span class="o">.</span><span class="n">add_view</span><span class="p">(</span><span class="n">UserAdmin</span><span class="p">)</span>
+</div>
+<p>Next we update the <code>report.html</code> file in the <code>templates</code> directory with the following content:</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code>{% extends &quot;layout.html&quot; %}
+{% block content %}
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-12&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-header&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h3</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-title&quot;</span><span class="p">&gt;</span>User reports<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card-body border-bottom py-3&quot;</span><span class="p">&gt;</span>
+    Users count: {{ users_count }}
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+{% endblock %}
 </code></pre></div>
-<p>Or if you want to use <code>SQLAdmin</code> with <code>Starlette</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqladmin</span> <span class="kn">import</span> <span class="n">Admin</span><span class="p">,</span> <span class="n">ModelView</span>
-<span class="kn">from</span> <span class="nn">starlette.applications</span> <span class="kn">import</span> <span class="n">Starlette</span>
-
-
-<span class="n">app</span> <span class="o">=</span> <span class="n">Starlette</span><span class="p">()</span>
-<span class="n">admin</span> <span class="o">=</span> <span class="n">Admin</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="n">engine</span><span class="p">)</span>
-
-
-<span class="k">class</span> <span class="nc">UserAdmin</span><span class="p">(</span><span class="n">ModelView</span><span class="p">,</span> <span class="n">model</span><span class="o">=</span><span class="n">User</span><span class="p">):</span>
-    <span class="n">column_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">User</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">User</span><span class="o">.</span><span class="n">name</span><span class="p">]</span>
-
-
-<span class="n">admin</span><span class="o">.</span><span class="n">add_view</span><span class="p">(</span><span class="n">UserAdmin</span><span class="p">)</span>
-</code></pre></div>
-<p>Now visiting <code>/admin</code> on your browser you can see the <code>SQLAdmin</code> interface.</p>
-<h2 id="related-projects-and-inspirations">Related projects and inspirations</h2>
-<ul>
-<li><a href="https://github.com/flask-admin/flask-admin">Flask-Admin</a> Admin interface for Flask supporting different database backends and ORMs. This project has inspired SQLAdmin extensively and most of the features and configurations are implemented the same.</li>
-<li><a href="https://github.com/fastapi-admin/fastapi-admin">FastAPI-Admin</a> Admin interface for FastAPI which works with <code>TortoiseORM</code>.</li>
-<li><a href="https://github.com/encode/dashboard">Dashboard</a> Admin interface for ASGI frameworks which works with the <code>orm</code> package.</li>
-</ul>
+</div>
+<p>Now running your server you can head to <code>/admin/report</code> and you can see the number of users.</p>
 
 
   
@@ -674,15 +631,30 @@
     
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
+        
+        <a href="../working_with_templates/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Working with Templates" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Working with Templates
+            </div>
+          </div>
+        </a>
+      
       
         
-        <a href="configurations/" class="md-footer__link md-footer__link--next" aria-label="Next: Configurations" rel="next">
+        <a href="../faq/" class="md-footer__link md-footer__link--next" aria-label="Next: Frequently Asked Questions" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Configurations
+              Frequently Asked Questions
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -744,10 +716,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.8492ddcf.min.js"></script>
+      <script src="../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
     
   </body>

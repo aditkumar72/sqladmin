@@ -337,13 +337,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-views" class="md-nav__link">
-    Custom Views
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#events" class="md-nav__link">
     Events
   </a>
@@ -396,6 +389,21 @@
   
   
     <li class="md-nav__item">
+      <a href="../writing_custom_views/" class="md-nav__link">
+        Working with Custom Views
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../faq/" class="md-nav__link">
         Frequently Asked Questions
       </a>
@@ -414,18 +422,18 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_7">
           API Reference
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="API Reference" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_7">
           <span class="md-nav__icon md-icon"></span>
           API Reference
         </label>
@@ -591,13 +599,6 @@
         <li class="md-nav__item">
   <a href="#templates" class="md-nav__link">
     Templates
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#custom-views" class="md-nav__link">
-    Custom Views
   </a>
   
 </li>
@@ -800,6 +801,7 @@ The forms are based on <code>WTForms</code> package and include the following op
 <li><code>form_overrides</code>: Dictionary of form fields to override when creating the form.</li>
 <li><code>form_include_pk</code>: Control if primary key column should be included in create/edit forms. Default is <code>False</code>.</li>
 <li><code>form_ajax_refs</code>: Use Ajax with Select2 for loading relationship models async. This is use ful when the related model has a lot of records.</li>
+<li><code>form_converter</code>: Allow adding custom converters to support additional column types.</li>
 </ul>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
@@ -843,33 +845,6 @@ The pages available are:</p>
 </code></pre></div>
 </div>
 <p>For more information about working with template see <a href="../working_with_templates/">Working with Templates</a>.</p>
-<h2 id="custom-views">Custom Views</h2>
-<p>To add custom views to the Admin interface, you can use the <code>BaseView</code> included in SQLAdmin.</p>
-<p>For example:</p>
-<div class="admonition example">
-<p class="admonition-title">Example</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqladmin</span> <span class="kn">import</span> <span class="n">BaseView</span><span class="p">,</span> <span class="n">expose</span>
-
-<span class="k">class</span> <span class="nc">CustomView</span><span class="p">(</span><span class="n">BaseView</span><span class="p">):</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Custom Page&quot;</span>
-    <span class="n">icon</span> <span class="o">=</span> <span class="s2">&quot;fa-chart-line&quot;</span>
-
-    <span class="nd">@expose</span><span class="p">(</span><span class="s2">&quot;/custom&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;GET&quot;</span><span class="p">])</span>
-    <span class="k">def</span> <span class="nf">custom_page</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">templates</span><span class="o">.</span><span class="n">TemplateResponse</span><span class="p">(</span>
-            <span class="s2">&quot;custom.html&quot;</span><span class="p">,</span>
-            <span class="n">context</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;request&quot;</span><span class="p">:</span> <span class="n">request</span><span class="p">},</span>
-        <span class="p">)</span>
-
-<span class="n">admin</span><span class="o">.</span><span class="n">add_view</span><span class="p">(</span><span class="n">CustomView</span><span class="p">)</span>
-</code></pre></div>
-</div>
-<p>This will assume a <code>templates</code> directory exists in your project.
-You can modify this when you create an Admin instance:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqladmin</span> <span class="kn">import</span> <span class="n">Admin</span>
-
-<span class="n">admin</span> <span class="o">=</span> <span class="n">Admin</span><span class="p">(</span><span class="n">templates_dir</span><span class="o">=</span><span class="s2">&quot;my_templates&quot;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
-</code></pre></div>
 <h2 id="events">Events</h2>
 <p>There might be some cases which you want to do some actions
 before or after a model was created, updated or deleted.</p>
